@@ -4,6 +4,7 @@
   "description": "This is a TALCHAIN website project",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "webpack": "^3.5.5"
