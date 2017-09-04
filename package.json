@@ -4,6 +4,7 @@
   "description": "This is a TALCHAIN website project",
   "main": "index.js",
   "dependencies": {
+    "lodash": "^4.17.4",
     "webpack": "^3.5.5"
   },
   "devDependencies": {},
