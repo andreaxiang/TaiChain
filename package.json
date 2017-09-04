@@ -1,0 +1,19 @@
+{
+  "name": "taichain",
+  "version": "1.0.0",
+  "description": "This is a TALCHAIN website project",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xiangxue89@163.com"
+  },
+  "author": "andreaxiang",
+  "license": "ISC"
+}
