@@ -1,11 +1,65 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-  <meta charset="UTF-8"/>
-  <title>才链－首页</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <title>Bootstrap Template</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
+  <!-- css by xiangxue -->
+  <link rel="stylesheet" href="./src/css/style.css"/>
+  <!--[if lt IE 9]>
+  <script src="./src/js/html5shiv.min.js"></script>
+  <script src="./src/js/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 
-  <script src="dist/bundle.js"></script>
+<div class="container">
+  <div class="header">
+    <a class="logo"><img src="./src/images/logo-0.png" alt="才链logo"/></a>
+  </div>
+  <div class="main clearfix">
+    <ul class="aside">
+      <li><h2>我要找工作</h2></li>
+      <li>
+        <a class="oo"><i class="icon">&#xe60a;</i></a>
+      </li>
+      <li>
+        <a href="#" class="btn">去找工作</a>
+      </li>
+    </ul>
+    <div class="line"></div> <!-- this is vertical line -->
+    <ul class="aside">
+      <li><h2>我要招人</h2></li>
+      <li>
+        <a class="oo"><i class="icon">&#xe606;</i></a>
+      </li>
+      <li>
+        <a href="#" class="btn">去发布职位</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<script src="dist/bundle.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./src/js/jquery-1.11.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./src/bootstrap/js/bootstrap.min.js"></script>
+<!--使用bootlint检查html和css是否有误-->
+<script>
+  (function () {
+    var s = document.createElement("script");
+    s.onload = function () {
+      bootlint.showLintReportForCurrentDocument([]);
+    };
+    s.src = "src/js/bootlint.js";
+    document.body.appendChild(s)
+  })();
+</script>
 </body>
 </html>
