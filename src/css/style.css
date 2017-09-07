@@ -15,7 +15,15 @@ ul, ol, dl {
   list-style: none;
 }
 a {
+  color: #1F2D3D;
   text-decoration: none;
+}
+a:hover {
+  color: rgba(255,77,80,.8);
+}
+a.active {
+  color: #ff4d50;
+  font-size: 10px;
 }
 .clearfix:after {
   content: '';
@@ -44,19 +52,18 @@ img {
 body {
   width: 100%;
   height: 100%;
-  background: url("../images/user-0.jpg") no-repeat 0 0;
-  background-size: cover;
-  background-attachment: fixed;
+  /*background: url("../images/user-0.jpg") no-repeat 0 0;*/
+  /*background-size: cover;*/
+  /*background-attachment: fixed;*/
+  background: #3a4551; /*备用 背景色*/
   color: #333;
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
+
 .container {
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  margin: 5% auto;
-  border: 1px solid #0000ff;
+  margin: 30px auto;
 }
+
 .header , .main {
   max-width: 800px;
   margin: 30px auto;
@@ -72,16 +79,20 @@ body {
 .header .logo img {
   vertical-align: middle;
 }
-.main {
+.main .container {
   background: rgba(255,255,255,.6);
   text-align: center;
-  height: 400px;
-  padding: 20px;
   color: #1F2D3D;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 15px;
+}
+.main {
   position: relative;
 }
 .main ul.aside {
-  width: 50%;
+  width: 100%;
   height: 300px;
   float: left;
   text-align: center;
@@ -108,7 +119,7 @@ body {
   text-align: center;
 }
 .btn {
-  max-width: 50%;
+  width: 60%;
   height: 40px;
   line-height: 18px;
   padding: 10px 20px;
@@ -129,4 +140,77 @@ body {
   width: 1px;
   height: 300px;
   background: #1F2D3D;
+}
+/*  tab */
+.wrap {
+  max-width: 600px;
+  margin: 20px auto;
+}
+.tabs {}
+.content{
+  margin: 20px;
+}
+.tabs>li {
+  float:left;
+  width: 50%;
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  color: #1F2D3D;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tabs>li.active {
+  border-bottom: 2px solid rgba(31,45,61,.5);
+  color: #1F2D3D;
+  font-size: 16px;
+}
+.content {
+  padding: 20px 10px;
+}
+.content>li {
+  display: none;
+}
+.content>.active {
+  display: block;
+}
+/* 注册登录表单 */
+.form-group label {
+  color: #1F2D3D;
+  font-weight: normal;
+}
+.checkbox label {
+  color: rgba(31,45,61,.8);
+  font-size: 10px;
+}
+.checkbox label a {
+  color: #ff4d50;
+  /*color: rgba(255,77,80,.8);*/
+  font-size: 10px;
+}
+.go-login {
+  font-size: 14px;
+  color: #1F2D3D;
+}
+.go-login a:hover {
+  color: rgba(255,77,80,.8);
+}
+.signin-tips {
+  font-size: 12px;
+}
+input[name=identify] {
+  width: 62%;
+  display: inline-block;
+}
+.vf-code {
+  width: 32%;
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #1F2D3D;
+  background: #1F2D3D;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 10px;
 }

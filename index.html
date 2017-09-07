@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="renderer" content="webkit">
-  <title>Bootstrap Template</title>
+  <title>才链-首页</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
   <!-- css by xiangxue -->
@@ -14,33 +14,54 @@
   <script src="./src/js/html5shiv.min.js"></script>
   <script src="./src/js/respond.min.js"></script>
   <![endif]-->
+
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background: url("./src/images/user-0.jpg") no-repeat 0 0;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+      font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    }
+  </style>
 </head>
 <body>
 
+
 <div class="container">
-  <div class="header">
+  <div class="header top_bar">
     <a class="logo"><img src="./src/images/logo-0.png" alt="才链logo"/></a>
   </div>
-  <div class="main clearfix">
-    <ul class="aside">
-      <li><h2>我要找工作</h2></li>
-      <li>
-        <a class="oo"><i class="icon">&#xe60a;</i></a>
-      </li>
-      <li>
-        <a href="#" class="btn">去找工作</a>
-      </li>
-    </ul>
-    <div class="line"></div> <!-- this is vertical line -->
-    <ul class="aside">
-      <li><h2>我要招人</h2></li>
-      <li>
-        <a class="oo"><i class="icon">&#xe606;</i></a>
-      </li>
-      <li>
-        <a href="#" class="btn">去发布职位</a>
-      </li>
-    </ul>
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-center">
+          <ul class="aside">
+            <li><h2>我要找工作</h2></li>
+            <li>
+              <a class="oo"><i class="icon">&#xe60a;</i></a>
+            </li>
+            <li>
+              <a href="src/html/user-signup.html" class="btn btn-primary btn-lg">去找工作</a>
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div> <!-- this is vertical line -->
+        <div class="col-md-6 align-center">
+          <ul class="aside">
+            <li><h2>我要招人</h2></li>
+            <li>
+              <a class="oo"><i class="icon">&#xe606;</i></a>
+            </li>
+            <li>
+              <a href="src/html/user-signup.html" class="btn btn-primary btn-lg">去发布职位</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -50,16 +71,6 @@
 <script src="./src/js/jquery-1.11.3.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="./src/bootstrap/js/bootstrap.min.js"></script>
-<!--使用bootlint检查html和css是否有误-->
-<script>
-  (function () {
-    var s = document.createElement("script");
-    s.onload = function () {
-      bootlint.showLintReportForCurrentDocument([]);
-    };
-    s.src = "src/js/bootlint.js";
-    document.body.appendChild(s)
-  })();
-</script>
+
 </body>
 </html>
