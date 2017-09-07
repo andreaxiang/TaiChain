@@ -1,2 +1,1 @@
-# TaiChain v1.0
-才链－基于区块链技术的人力资源管理系统
+# TaiChain v1.0beta
