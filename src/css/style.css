@@ -141,12 +141,11 @@ body {
   height: 300px;
   background: #1F2D3D;
 }
-/*  tab */
+/*  tab  */
 .wrap {
   max-width: 600px;
   margin: 20px auto;
 }
-.tabs {}
 .content{
   margin: 20px;
 }
@@ -213,4 +212,49 @@ input[name=identify] {
   font-size: 12px;
   line-height: 20px;
   margin-left: 10px;
+}
+/* 找回密码 */
+.step {
+  position: relative;
+  z-index: 2;
+}
+.step li {
+  display: inline-block;
+  width: 25%;
+  padding: 0.38rem 0;
+  text-align: center;
+  color: #A9A9A9;
+  font-size: 14px;
+}
+.step li.active .step-icon {
+  background: #0087ec;
+}
+.step li.active .step-txt {
+  color: #0087ec;
+}
+.step-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  background: #A9A9A9;
+  opacity: .8;
+  color: #fff;
+  margin-bottom: .2rem;
+}
+.step-txt {
+  color: #A9A9A9;
+}
+.pro-line {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 13%;
+  height: 1px;
+  margin-left: -5.5%;
+  margin-top: -5px;
+  background: #a9a9a9;
 }

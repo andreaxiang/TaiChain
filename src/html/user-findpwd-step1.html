@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <title>才链_重置密码</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../src/bootstrap/css/bootstrap.min.css">
+  <!-- css by xiangxue -->
+  <link rel="stylesheet" href="../../src/css/style.css"/>
+  <!--[if lt IE 9]>
+  <script src="../../src/js/html5shiv.min.js"></script>
+  <script src="../../src/js/respond.min.js"></script>
+  <![endif]-->
+
+  <style>
+    /*背景图片*/
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: url("../images/user-3.jpg") no-repeat 0 0;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+      font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    }
+  </style>
+
+</head>
+<body>
+
+
+<div class="container">
+  <div class="header top_bar">
+    <a class="logo"><img src="../../src/images/logo-0.png" alt="才链logo"/></a>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-center">
+          <ul class="step clearfix">
+            <li class="active">
+              <span class="step-icon">1</span>
+              <p class="step-txt">验证手机号码</p>
+            </li>
+            <span class="pro-line"></span>
+            <li>
+              <span class="step-icon">2</span>
+              <p class="step-txt">重置密码</p>
+            </li>
+          </ul>
+          <ul class="dorm-book">
+            <!--个人登录-->
+            <form role="form" class="form-horizontal">
+              <div class="form-group">
+                <!--<label class="col-md-4 control-label">手机号</label>-->
+                <div class="col-md-6 col-md-offset-3">
+                  <input type="text" name="phone" autofocus="autofocus" class="form-control" placeholder="请输入手机号">
+                  <span class="help-block" style="display: none;"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <!--<label class="col-md-4 control-label">验证码</label>-->
+                <div class="col-md-6 col-md-offset-3">
+                  <input type="text" name="identify" class="form-control" placeholder="验证码">
+                  <input type="button" class="vf-code" value="获取验证码">
+                  <span class="help-block" style="display: none;"></span>
+                </div>
+              </div>
+              <div>
+                <div class="form-group">
+                  <div class="col-md-6 col-md-offset-3">
+                    <a href="user-findpwd-step2.html" class="btn btn-primary btn-lg">
+                     下一步
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../../src/js/jquery-1.11.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../src/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
